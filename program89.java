@@ -1,0 +1,71 @@
+///acept no from user and calculate Factorial of Number
+//eg = ip 5 op 5*4*3*2*1=120
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : CalculateFactorial
+//  Description :   Accept Number from user and Calculate Factorial of that number                  
+//  Input :         long integer
+//  Output :        long integer
+//  Author :        Varal Rutuja Bharat
+//  Date :          7/11/2025
+//
+//////////////////////////////////////////////////////////////////////////////
+
+
+import java.util.*;
+
+class Number
+{
+public long CalculateFactorial(int iNo)
+
+{   
+
+    int i= 0;
+    long iFact = 1 ;  //important
+
+     if(iNo < 0)    //UPDATOR
+    {
+        iNo = -iNo;
+    }
+
+ i =1 ;
+   while (i<= iNo)   //change
+   {
+    iFact = iFact * i;
+    i++;
+   }
+   return iFact;
+ }       
+}
+// End of Number
+
+class program89
+{
+    public static void main(String A[])
+    {
+      int iValue = 0;
+      long iRet = 0 ;  //important
+     
+
+      Scanner sobj = new Scanner(System.in);
+
+      System.out.println("Enter number:");
+      iValue=sobj.nextInt();
+
+      Number nobj = new Number();
+
+      iRet = nobj.CalculateFactorial(iValue);
+
+      System.out.println("Factorial is :" + iRet);
+
+      //imp
+
+      sobj = null;
+      nobj = null;
+      System.gc();
+      
+     
+      
+    }
+}
