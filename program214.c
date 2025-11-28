@@ -1,0 +1,50 @@
+
+/////////////////////////////////////////////////////////////////
+//
+//  File Name :     program214.c
+//  Description :   Problems on String     
+//  Input :          
+//  Output :       
+//  Author :        Rutuja Bharat varal
+//  Date :          27/11/2025
+//
+/////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////
+// 
+//  Required Header files
+//
+/////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+#include<string.h>
+
+void Display(char *str)
+{
+   printf("%c\n",*str);
+   str++;
+
+   printf("%c\n",*str);
+   str++;
+
+   printf("%c\n",*str);
+
+}
+
+/////////////////////////////////////////////////////////////////
+//
+//  Entry point function for the application
+//
+/////////////////////////////////////////////////////////////////
+
+int main()
+{
+    char Arr[50]={'\0'};
+    printf("Enter String :\n");
+    scanf("%[^'\n']s",Arr);
+
+    Display(Arr);
+
+    return 0;
+}  
+
