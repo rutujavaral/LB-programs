@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////////////////////
+//
+//  File Name   :     program280.cpp
+//  Description :     
+//                  
+//  Input       :         
+//  Output      :        
+//  Author      :      Rutuja Bharat varal
+//  Date        :      29/11/2025
+//
+////////////////////////////////////////////////////////////////////////////////////
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    return 0;
+    
+}
